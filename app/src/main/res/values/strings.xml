@@ -2,4 +2,14 @@
     <string name="app_name">TA5JoséPatiño</string>
     <string name="lib_online">Lib Online</string>
     <string name="todo">TODO</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar_contrasena">Ingresar contraseña</string>
+    <string name="ingresar_usuario">Ingresar usuario</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="logo1">Logo1</string>
+    <string name="busqueda_de_libro">Búsqueda de libro</string>
+    <string name="header">header</string>
+    <string name="libros">Libros</string>
 </resources>
