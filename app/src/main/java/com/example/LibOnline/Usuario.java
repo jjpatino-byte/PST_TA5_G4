@@ -13,7 +13,7 @@ public class Usuario extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("create table usuarios(codigo int primary key,userName text,password text,fName text,sName text,mail text,cell text,favGenre text)");
+        sqLiteDatabase.execSQL("create table usuarios(codigo int primary key autoincrement ,userName text,password text,fName text,sName text,mail text,cell text,favGenre text)");
     }
 
     @Override
