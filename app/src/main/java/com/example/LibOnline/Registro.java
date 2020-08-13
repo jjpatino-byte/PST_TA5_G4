@@ -39,18 +39,20 @@ public class Registro extends AppCompatActivity {
         String celular =et6.getText().toString();
         String catFav = et7.getText().toString();
 
-        Cursor fila = bd.rawQuery(
-                "select userName,mail from usuarios where userName like '" + use +"' or mail like '"+ correo +"'", null);
-        if (fila.moveToFirst()) {
-            Toast.makeText(this, "Usuario o correo ya estan siendo utilizados.",
-                    Toast.LENGTH_SHORT).show();
-            return;
-        }
         if(fname.isEmpty()||sname.isEmpty()||use.isEmpty()||pass.isEmpty()||correo.isEmpty()||celular.isEmpty()||catFav.isEmpty()){
             Toast.makeText(this, "Complete todos los campos",
                     Toast.LENGTH_SHORT).show();
             return;
         }
+
+        Cursor fila = bd.rawQuery(
+                "select userName, mail from usuarios where userName = '" + use +"' or mail = '"+ correo +"'", null);
+        if (fila.moveToFirst()) {
+            Toast.makeText(this, "Usuario o correo ya estan siendo utilizados.",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         bd.execSQL("insert into usuarios (codigo,userName,password,fName,sName,mail,cell,favGenre) values (autoincrement,"+use+","+pass+","+fname+","+sname+","+correo+","+celular+","+catFav+")");
         bd.close();
         et1.setText("");
