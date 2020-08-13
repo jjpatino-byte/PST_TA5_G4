@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="inicio"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
+        android:onClick="inicio"
         android:text="@string/lib_online"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -25,12 +27,13 @@
         android:layout_width="162dp"
         android:layout_height="114dp"
         android:layout_marginTop="208dp"
+        android:contentDescription="@string/todo"
+        android:onClick="inicio"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.529"
-        app:srcCompat="@drawable/c8ebb9947fe4f57d2bf706184c620895_abrir_icono_de_libro_de_texto_by_vexels"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/c8ebb9947fe4f57d2bf706184c620895_abrir_icono_de_libro_de_texto_by_vexels" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
